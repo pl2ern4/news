@@ -95,6 +95,16 @@ footer {
     background-color: white;
   }  
 /***/
+#emptyelement .spinner-box .circle-border .circle-core{
+  width: 0.7rem;
+  height: 0.7rem;
+}
+#emptyelement .spinner-box .circle-border{
+  width: 1rem;
+  height: 1rem;
+  top:unset;
+  position: absolute;
+}
 .user-detail{
   margin-top:5rem;
 }

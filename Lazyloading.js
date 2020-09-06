@@ -56,7 +56,7 @@ class LazyLoading {
                     template += this.template(parsedObj);
                 });
                 if (end + 10 < this.len) {
-                    template += "<li id='emptyelement'></li>";
+                    template += `<li id='emptyelement'>${loader()}</li>`;
                 }
 
                 if (params) {

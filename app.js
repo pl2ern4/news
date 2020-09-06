@@ -50,7 +50,7 @@ function renderStory(story) {
     getResponse(`https://hacker-news.firebaseio.com/v0/${story}.json`)
         .then(res => {
             stories = JSON.parse(res);
-            const obj = new LazyLoading(stories.slice(0,45));
+            const obj = new LazyLoading(stories);
             obj.lazyLoad();
         })
 }
