@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="./favicon.ico" />
+
+    <title> Y News!</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header class="topnav">
+        <span href="#">Y News!</span>
+        <a id="tab_login" onclick="selectTab('login')" href="#login">Login</a>
+        <!-- <a id="tab_submit" onclick="selectTab('submit')" href="#submit">Submit</a> -->
+        <!-- <a id="tab_show" onclick="selectTab('show')" href="#show">Show</a> -->
+        <a id="tab_askstories" onclick="selectTab('askstories')" href="#askstories">Ask</a>
+        <!-- <a id="tab_comments" onclick="selectTab('comments')" href="#comments">Comments</a> -->
+        <!-- <a id="tab_new" onclick="selectTab('new')" href="#new">New</a> -->
+        <a id="tab_topstories" onclick="selectTab('topstories')" href="/">Home</a>
+        <a id="tab_ware" disabled>Login</a>
+    </header>
+    <div id="content"></div>
+    <footer>
+        <p>Author: prerna<br>
+            <a href="mailto:contact@ynews.com">Contact us</a></p>
+    </footer>
+</body>
+<script src="Login.js"></script>
+<script src="Lazyloading.js"></script>
+<script src="app.js"></script>
+
+
+</html>
