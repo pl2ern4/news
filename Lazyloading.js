@@ -43,13 +43,12 @@ class LazyLoading {
     }
     lazyLoad = params => {
         const end = this.end;
+        if (this.last) {
+                    return false;
+                }
 
         Promise.all(this.array.slice(this.start, this.end).map(obj => getResponse(`https://hacker-news.firebaseio.com/v0/item/${obj}.json`)))
             .then(story => {
-                if (this.last) {
-                    return false;
-                }
-                // let storyParsed = JSON.parse(story);
                 let template = "";
                 story.forEach(obj => {
                     const parsedObj = JSON.parse(obj);
